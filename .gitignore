@@ -29,3 +29,13 @@ node_modules/
 .venv/
 backend/.venv/
 venv/
+
+# secrets & deps
+.env
+*.env
+backend/.env
+node_modules/
+.venv/
+backend/.venv/
+**/__pycache__/
+*.pyc
