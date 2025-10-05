@@ -1,24 +1,51 @@
-﻿# Node dependencies
-node_modules/
-frontend/node_modules/
-
-# Build outputs
-dist/
-frontend/dist/
-
-# Environment files
-.env
-.env.*
-frontend/.env
-frontend/.env.*
-
-# OS junk
+# OS / editor
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
-# secrets
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+.venv/
+venv/
+backend/.venv/
+backend/venv/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Django
+staticfiles/
+media/
+db.sqlite3
+
+# Node / Vite / React
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.cache/
+.eslintcache
+
+# Env & secrets (never commit)
 .env
 *.env
-
-# Backend
 backend/.env
+frontend/.env
+.env.local
+.env.*.local
+
+# Misc
+*.log
+*.swp
+*.swo
